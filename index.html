@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Four card feature section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                red: "#ea5353",
+                cyan: "#45d3d3",
+                orange: "#fcaf4a",
+                blue: "#549ef2",
+              },
+              neu: {
+                dark: "#4c4e61",
+                med: "#a3a5ae",
+                light: "#fafafa",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="w-full py-8 sm:h-screen bg-neu-light flex flex-col justify-center items-center text-neu-dark"
+  >
+    <h4 class="text-4xl font-[200] mb-2 mt-16">Reliable, efficient delivery</h4>
+    <h1 class="text-4xl mb-4">Powered by Technology</h1>
+    <p class="mx-4 sm:w-[500px] text-neu-med font-[400] text-center">
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your project is successful
+    </p>
+
+    <div
+      class="cards flex flex-col sm:flex-row justify-center items-center gap-8 text-[14px] mt-12"
+    >
+      <div
+        class="card w-[350px] h-[260px] p-8 shadow-xl shadow-neu-dark/10 rounded-lg border-t-4 border-t-primary-cyan relative"
+      >
+        <h1 class="font-[600] text-[16px]">Supervisor</h1>
+        <p class="text-neu-med mt-1">
+          Monitors activity to identify project roadblocks
+        </p>
+        <img
+          src="./images/icon-supervisor.svg"
+          alt="illutration"
+          class="absolute right-6 bottom-6"
+        />
+      </div>
+
+      <div class="cards flex flex-col sm:flex-row gap-8 sm:flex-col">
+        <div
+          class="card w-[350px] h-[260px] p-8 shadow-xl shadow-neu-dark/10 rounded-lg border-t-4 border-t-primary-red relative"
+        >
+          <h1 class="font-[600] text-[16px]">Team Builder</h1>
+          <p class="text-neu-med mt-1">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            src="./images/icon-team-builder.svg"
+            alt="illutration"
+            class="absolute right-6 bottom-6"
+          />
+        </div>
+        <div
+          class="card w-[350px] h-[260px] p-8 shadow-xl shadow-neu-dark/10 rounded-lg border-t-4 border-t-primary-orange relative"
+        >
+          <h1 class="font-[600] text-[16px]">Karma</h1>
+          <p class="text-neu-med mt-1">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img
+            src="./images/icon-karma.svg"
+            alt="illutration"
+            class="absolute right-6 bottom-6"
+          />
+        </div>
+      </div>
+
+      <div
+        class="card w-[350px] h-[260px] p-8 shadow-xl shadow-neu-dark/10 rounded-lg border-t-4 border-t-primary-blue relative"
+      >
+        <h1 class="font-[600] text-[16px]">Calculator</h1>
+        <p class="text-neu-med mt-1">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <img
+          class="absolute right-6 bottom-6"
+          src="./images/icon-calculator.svg"
+          alt="illutration"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution mt-8  w-screen text-center">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/abhi1322">Abhishek kumar</a>.
+      </p>
+    </footer>
+  </body>
+</html>
